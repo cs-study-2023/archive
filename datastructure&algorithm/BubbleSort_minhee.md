@@ -36,7 +36,9 @@ void bubbleSort(int[] arr) {
 		}
 	}
 	System.out.println(Arrays.toString(arr));
-}```
+}
+```
+
 
 ## 출처
 - https://gmlwjd9405.github.io/2018/05/06/algorithm-bubble-sort.html
