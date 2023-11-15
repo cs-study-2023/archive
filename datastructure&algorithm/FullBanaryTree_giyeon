@@ -1,0 +1,13 @@
+# 정 이진트리(Full Binary Tree)
+
+- 모든 노드가 0개 혹은 2개의 children 을 가지고 있을 때 “Binary Tree 는 full” 이라고 함
+  => leaf 노드들을 제외한 모든 노드들이 2개의 children 을 가지는 Binary Tree  
+  ![출처: 위키피디아](images\full-binary-tree.png)
+
+## 예상 질문
+
+Binary Tree가 아닌 Full Binary Tree는 정보가 적고 면접에서도 나오지 않는 듯해 생략하였음
+
+## 참고 링크
+
+https://yaboong.github.io/data-structures/2018/02/10/1_binary-tree-1/
