@@ -129,8 +129,7 @@ for each row in t1 matching reference key {
 
 ### 참고자료
 
-https://velog.io/@pjh1011409/CS-%EC%A0%84%EA%B3%B5%EC%A7%80%EC%8B%9Djoin
-
-출처: https://dev-coco.tistory.com/158 [슬기로운 개발생활:티스토리]
-
-https://advenoh.tistory.com/23
+[CS 전공지식(join)
+](https://velog.io/@pjh1011409/CS-%EC%A0%84%EA%B3%B5%EC%A7%80%EC%8B%9Djoin)<br>
+[신입 개발자 기술면접 질문 정리 - 데이터베이스](https://dev-coco.tistory.com/158)<br>
+[관계형 데이터베이스에서 조인(join)이란?](https://advenoh.tistory.com/23)<br>
