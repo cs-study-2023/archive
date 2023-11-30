@@ -245,6 +245,7 @@ doTest2(obj);
 
 ### 참고자료
 
-https://github.com/devSquad-study/2023-CS-Study/blob/main/java/java_gc.md
-https://beststar-1.tistory.com/15
-https://dev-coco.tistory.com/153
+https://github.com/devSquad-study/2023-CS-Study/blob/main/java/java_gc.md<br>
+https://beststar-1.tistory.com/15<br>
+https://dev-coco.tistory.com/153<br>
+https://beststar-1.tistory.com/16#G1_(Garbage_First)_GC<br>
