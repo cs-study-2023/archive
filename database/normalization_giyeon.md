@@ -13,7 +13,7 @@
 
 ## 정규화의 종류
 
-![Alt text](images/normalization-7.jpeg)
+![Alt text](img/normalization-7.jpeg)
 
 ### 1. 제 1정규화(1NF)
 
@@ -24,10 +24,10 @@
 - 모든 속성에 반복되는 그룹이 나타나지 않는다.
 - 기본키를 사용하여 관련 데이터의 각 집합을 고유하게 식별할 수 있어야 한다.
 
-![Alt text](images/normalization-1.png)
+![Alt text](img/normalization-1.png)
 현재 테이블은 전화번호를 여러개 가지고 있어 원자값이 아니다. 따라서 1NF에 맞추기 위해서는 아래와 같이 분리할 수 있다.
 
-![Alt text](images/normalization-2.png)
+![Alt text](img/normalization-2.png)
 
 ### 제 2정규화(2NF)
 
@@ -35,13 +35,13 @@
 예를 들어 테이블에서 기본키가 복합키(키1, 키2)로 묶여있을 때, 두 키 중 하나의 키만으로 다른 컬럼을 결정지을 수 있으면 안된다.  
 기본키의 부분집합 키가 결정자가 되어선 안된다는 것.
 
-![Alt text](images/normalization-3.png)
+![Alt text](img/normalization-3.png)
 Manufacture과 Model이 키가 되어 Model Full Name을 알 수 있다.  
 Manufacturer Country는 Manufacturer로 인해 결정된다. (부분 함수 종속)  
 따라서, Model과 Manufacturer Country는 아무런 연관관계가 없는 상황이다.  
 결국 완전 함수적 종속을 충족시키지 못하고 있는 테이블이다. 부분 함수 종속을 해결하기 위해 테이블을 아래와 같이 나눠서 2NF를 만족할 수 있다.
 
-![Alt text](images/normalization-4.png)
+![Alt text](img/normalization-4.png)
 
 ### 제 3정규화(3NF)
 
@@ -52,11 +52,11 @@ Manufacturer Country는 Manufacturer로 인해 결정된다. (부분 함수 종�
 - 릴레이션이 2NF에 만족한다.
 - 기본키가 아닌 속성들은 기본키에 의존한다.
 
-![Alt text](images/normalization-5.png)
+![Alt text](img/normalization-5.png)
 현재 테이블에서는 Tournament와 Year이 기본키다. Winner는 이 두 복합키를 통해 결정된다. 하지만 Winner Date of Birth는 기본키가 아닌 Winner에 의해 결정되고 있다.  
 따라서 이는 3NF를 위반하고 있으므로 아래와 같이 분리해야 한다.
 
-![Alt text](images/normalization-6.png)
+![Alt text](img/normalization-6.png)
 
 ### BCNF 정규형
 
