@@ -1,4 +1,4 @@
-# AOP
+# AOP - JDK Dynamic Proxy, CGLIB Proxy
 
 ---
 
