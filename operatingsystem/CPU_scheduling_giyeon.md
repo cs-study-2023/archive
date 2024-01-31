@@ -20,6 +20,7 @@ CPU가 유휴 상태가 될 때마다, 운영체제는 Ready Queue에 있는 프
 
 CPU 스케줄러는 실행 준비가 되어 있는 메모리 내의 프로세스 중에서 선택하여, 이들 중 하나에게 CPU를 할당한다.
 
+
 ![annotation](img/CPU_Scheduling2.png)
 
 **\*준비 큐:** CPU 할당을 기다리는 큐  
@@ -187,6 +188,7 @@ SJF스케줄링은 다음과 같은 이유로 사용하기 힘들다.
 ---
 
 SJF에서 발생할 수 있는 starvation 현상을 해결하기 위해 만들어진 비선점형 알고리즘이다. **최고 응답률 우선 스케줄링**이라고도 한다.
+
 ![annotation](img/CPU-Scheduling9.png)
 
 ![annotation](img/CPU_Scheduling8.png)
