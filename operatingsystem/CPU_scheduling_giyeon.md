@@ -20,7 +20,8 @@ CPU가 유휴 상태가 될 때마다, 운영체제는 Ready Queue에 있는 프
 
 CPU 스케줄러는 실행 준비가 되어 있는 메모리 내의 프로세스 중에서 선택하여, 이들 중 하나에게 CPU를 할당한다.
 
-![annotation](img/CPU-scheduling2.png)
+
+![annotation](img/CPU_Scheduling2.png)
 
 **\*준비 큐:** CPU 할당을 기다리는 큐  
 **\*대기 큐:** I/O를 기다리는 큐
@@ -89,7 +90,7 @@ FCFS(First Come First Served) 스케줄링은 ready 큐에 도착한 순서대�
 
 즉, 프로세스가 ready queue에 도착한 순서대로 실행되며 비선점형 방식이기 때문에 한 번 실행되면 그 프로세스가 끝나야만 다음 프로세스를 실행할 수 있다.
 
-![annotation](img/CPU-scheduling3.png)
+![annotation](img/CPU_Scheduling3.png)
 
 다음과 같이 ready 큐는 head, tail이 있는 linked list 형태로 만들어져 있고, head에서 실행할 프로세스를 하나씩 빼낸다. 또한 tail에는 앞으로 실행할 프로세스들을 차곡차곡 쌓아둔다.
 
@@ -120,7 +121,7 @@ SJF스케줄링은 다음과 같은 이유로 사용하기 힘들다.
 
 ---
 
-![annotation](img/CPU-scheduling4.png)
+![annotation](img/CPU_Scheduling4.png)
 
 #### 선입 선처리 스케줄링 + 타임 슬라이스(time slice)
 
@@ -141,7 +142,7 @@ SJF스케줄링은 다음과 같은 이유로 사용하기 힘들다.
 프로세스들에 우선순위를 부여하고 우선순위가 높은 프로세스부터 실행한다.  
 우선순위가 같은 프로세스들이 있다면 선입 선처리로 스케줄링한다.
 
-![annotation](img/CPU-scheduling5.png)
+![annotation](img/CPU_Scheduling5.png)
 
     최단 작업 우선 스케줄링(SJF), 최소 잔여 시간 우선 스케줄링 ⊂ 우선순위 스케줄링
 
@@ -156,7 +157,7 @@ SJF스케줄링은 다음과 같은 이유로 사용하기 힘들다.
 
 우선순위 스케줄링의 발전된 형태로 우선순위별 준비 큐(A, B, C)를 여러 개 사용하는 스케줄링 방식이다.
 
-![annotation](img/CPU-scheduling6.png)
+![annotation](img/CPU_Scheduling6.png)
 
 - 우선순위가 가장 높은 큐(A)에 있는 프로세스들 먼저 쭉 처리
 - 우선 순위가 가장 높은 큐가 비어있으면 그다음 우선순위 큐(B)에 있는 프로세스들을 처리한다.
@@ -175,7 +176,7 @@ SJF스케줄링은 다음과 같은 이유로 사용하기 힘들다.
 
 다단계 큐 스케줄링 단점을 보완한 방식으로 큐 간의 이동이 가능한 스케줄링 방식이다.
 
-![annotation](img/CPU-scheduling7.png)
+![annotation](img/CPU_Scheduling7.png)
 
 우선순위대로 처리를 하면서 만약 할당된 시간 내 끝내지 못한 프로세스가 있다면, 다음으로 높은 우선순위 큐에 삽입해서 처리한다. (preempted)  
 이렇게 하면 CPU를 많이 사용해야 하는 프로세스의 우선순위가 낮아지게 된다.
@@ -187,9 +188,10 @@ SJF스케줄링은 다음과 같은 이유로 사용하기 힘들다.
 ---
 
 SJF에서 발생할 수 있는 starvation 현상을 해결하기 위해 만들어진 비선점형 알고리즘이다. **최고 응답률 우선 스케줄링**이라고도 한다.
-![annotation](img/CPU-scheduling9.png)
 
-![annotation](img/CPU-scheduling8.png)
+![annotation](img/CPU-Scheduling9.png)
+
+![annotation](img/CPU_Scheduling8.png)
 
 SJF 스케줄링은 프로세스의 실행 시간이 판단 기준이다.  
 반면 HRN 스케줄링은 서비스를 받기 위해 **기다린 시간(대기 시간)과 CPU 사용 시간**을 고려하여 스케줄링을 하는 방식이다.
